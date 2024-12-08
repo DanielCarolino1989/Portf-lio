@@ -1,0 +1,11 @@
+@import 'navbar.css';
+@import 'footer.css';
+@import 'whatsapp-btn.css';
+@import 'home.css';
+@import 'projetos.css';
+@import 'sobre.css';
+@import 'contato.css';
+
+html{
+scroll-behavior: smooth;
+}

@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.home {
+    background-color: #fffafa;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.home-nome {
+    font-size: 40px;
+    color: #892cdc;
+    margin: 26px 0;
+    font-weight: bold;
+    white-space: nowrap;
+    width:17ch;
+    overflow:hidden;
+    text-shadow:0px 0px 2px #333;
+    animation: animaTexto steps(100) 3s;
+}
+
+@keyframes animaTexto{
+    0%{
+        width: 0;
+    }
+}
+
+.home-texto {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-overflow: ellipsis;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.home-icons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contatoicons {
+    font-size: 36px;
+    color: #892cdc;
+    transition: 0.3s;
+    text-shadow: 0px 0px 2px #333;
+}
+
+.contatoicons:hover {
+    font-size: 38px;
+    color:#52057b;
+}
+
+
+.homeimg {
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    border: 12px outset #892cdc;
+    box-shadow: 0px 0px 18px #333 ;
+}
+
+@media (max-width: 768px) {
+    .home{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 100px 0px;
+    }
+
+    .home-nome {
+        font-size: 1.2em;
+    }
+    
+    .home-texto {
+        font-size: 0.9em;
+    }
+
+    .contatoicons {
+        font-size: 1.8em;
+    }
+
+    .homeimg {
+        width: 250px;
+    }
+}
